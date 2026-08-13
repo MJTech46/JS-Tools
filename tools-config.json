@@ -1,0 +1,60 @@
+{
+  "tools": [
+    {
+      "tool_id": 101,
+      "name": "calculator",
+      "card": {
+        "id": 101,
+        "title": "Calculator",
+        "url": "calculator/",
+        "tags": ["calculator", "math", "arithmetic", "utility"],
+        "category": "UTILITY",
+        "description": "Perform basic arithmetic calculations quickly and easily.",
+        "footer": { "slug": "calculator", "version": "v1.0" },
+        "icon": "<svg width='28' height='28' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z'></path></svg>"
+      }
+    },
+    {
+      "tool_id": 102,
+      "name": "file-downloader",
+      "card": {
+        "id": 102,
+        "title": "File Downloader",
+        "url": "file-downloader/",
+        "tags": ["file", "download", "manager", "utility"],
+        "category": "UTILITY",
+        "description": "Download files from URLs with ease and control.",
+        "footer": { "slug": "file-downloader", "version": "v1.0" },
+        "icon": "<svg width='22' height='22' fill='none' stroke='currentColor' stroke-width='2' viewBox='0 0 24 24'><path d='M12 3v12m0 0l-4-4m4 4l4-4'/><rect x='4' y='17' width='16' height='4' rx='1'/></svg>"
+      }
+    },
+    {
+      "tool_id": 103,
+      "name": "file-hash-verifier",
+      "card": {
+        "id": 103,
+        "title": "File Hash Checker & Verifier",
+        "url": "file-hash-verifier/",
+        "tags": ["file", "hash", "verification", "security"],
+        "category": "SECURITY",
+        "description": "Verify the integrity of files using cryptographic hash functions.",
+        "footer": { "slug": "file-hash-verifier", "version": "v1.0" },
+        "icon": "<svg width='22' height='22' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z'/></svg>"
+      }
+    },
+    {
+      "tool_id": 104,
+      "name": "uuid-generator",
+      "card": {
+        "id": 104,
+        "title": "UUID Generator",
+        "url": "uuid-generator/",
+        "tags": ["uuid", "guid", "random", "generator", "id", "identifier"],
+        "category": "GENERATOR",
+        "description": "Generate unique RFC4122 compliant version-4 UUIDs individually or in bulk.",
+        "footer": { "slug": "uuid-generator", "version": "v1.0" },
+        "icon": "<svg width='28' height='28' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M7 20l4-16m2 16l4-16M6 9h14M4 15h14'></path></svg>"
+      }
+    }
+  ]
+}
