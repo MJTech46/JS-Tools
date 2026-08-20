@@ -147,6 +147,30 @@
         "footer": { "slug": "markdown-preview", "version": "v1.0" },
         "icon": "<svg width='28' height='28' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z'></path><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M14 2v6h6'></path><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M9 13h6M9 17h6M9 9h1'></path></svg>"
       }
+    },
+    {
+      "tool_id": 110,
+      "name": "emoji-collection",
+      "card": {
+        "id": 110,
+        "title": "Emoji Collection",
+        "url": "emoji-collection/",
+        "tags": [
+          "emoji",
+          "emojis",
+          "emoji search",
+          "unicode",
+          "symbols",
+          "copy"
+        ],
+        "category": "UTILITY",
+        "description": "Search emojis by keywords and copy them instantly to the clipboard.",
+        "footer": {
+          "slug": "emoji-collection",
+          "version": "v1.0"
+        },
+        "icon": "<svg width='28' height='28' fill='none' stroke='currentColor' viewBox='0 0 24 24'><circle cx='12' cy='12' r='9' stroke-width='2'></circle><path stroke-linecap='round' stroke-width='2' d='M8 14s1.5 2 4 2 4-2 4-2M8.5 9.5h.01M15.5 9.5h.01'></path></svg>"
+      }
     }
   ]
 }
