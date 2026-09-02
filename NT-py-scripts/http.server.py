@@ -4,9 +4,10 @@ from pathlib import Path
 class CustomHandler(SimpleHTTPRequestHandler):
     def end_headers(self):
         # Send headers that instruct browsers not to cache any files
-        self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
-        self.send_header("Pragma", "no-cache")
-        self.send_header("Expires", "0")
+        # self.send_header("Cache-Control", "no-cache, no-store, must-revalidate")
+        # self.send_header("Pragma", "no-cache")
+        # self.send_header("Expires", "0")
+        self.send_header("Cache-Control", "must-revalidate")
         super().end_headers()
 
     def send_error(self, code, message=None, explain=None):
