@@ -236,6 +236,23 @@
         "footer": { "slug": "url-shortener", "version": "v1.0" },
         "icon": "<svg width='28' height='28' fill='none' stroke='currentColor' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1'></path></svg>"
       }
+    },
+    {
+      "tool_id": 115,
+      "name": "audio-channel-tester",
+      "card": {
+        "id": 115,
+        "title": "Audio & Channel Tester",
+        "url": "/audio-channel-tester/",
+        "tags": ["audio", "stereo", "channel", "headphones", "speaker", "3d", "8d", "utility"],
+        "category": "UTILITY",
+        "description": "Test left/right stereo channels, balance, speaker output, and 3D/8D spatial audio effects.",
+        "footer": {
+          "slug": "audio-channel-tester",
+          "version": "v1.0"
+        },
+        "icon": "<svg width='22' height='22' fill='none' stroke='currentColor' stroke-width='2' viewBox='0 0 24 24'><path stroke-linecap='round' stroke-linejoin='round' d='M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z'/></svg>"
+      }
     }
   ]
 }
