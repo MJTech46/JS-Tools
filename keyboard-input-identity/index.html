@@ -789,40 +789,6 @@
 </div>
 
 <script>
-async function loadDynamicToolInfo() {
-  const host = window.location.host || 'root domain';
-  document.querySelectorAll('.dynamic-domain').forEach(el => el.textContent = host);
-
-  const segments = window.location.pathname.replace(/\\/+$/, '').split('/').filter(Boolean);
-  const currentSlug = segments.length ? segments[segments.length - 1].toLowerCase() : '';
-  document.getElementById('openHubPath').textContent =
-    segments.length > 1 ? '/' + segments.slice(0, -1).join('/') + '/' : '/';
-
-  try {
-    const response = await fetch('/tools-config.json', {cache:'no-store'});
-    if (!response.ok) throw new Error('Config unavailable');
-    const config = await response.json();
-    const tools = Array.isArray(config) ? config : (Array.isArray(config.tools) ? config.tools : []);
-
-    const tool = tools.find(item => {
-      const slug = String(item.card?.footer?.slug || item.slug || item.name || '').replace(/^\\/+|\\/+$/g,'').toLowerCase();
-      const url = String(item.card?.url || item.url || '').replace(/^\\/+|\\/+$/g,'').toLowerCase();
-      return slug === currentSlug || url === currentSlug;
-    });
-    if (!tool) throw new Error('Tool not found');
-
-    const slug = String(tool.card?.footer?.slug || tool.slug || tool.name || currentSlug).replace(/^\\/+|\\/+$/g,'');
-    const id = tool.tool_id ?? tool.card?.id;
-    document.getElementById('openSlug').textContent = '/' + slug;
-    document.getElementById('openToolId').textContent = id == null ? 'Unavailable' : '/' + id;
-  } catch (error) {
-    console.error(error);
-    document.getElementById('openSlug').textContent = 'Unavailable';
-    document.getElementById('openToolId').textContent = 'Unavailable';
-  }
-}
-loadDynamicToolInfo();
-
 const themeToggleBtn = document.getElementById('themeToggleBtn');
 const themeToggleText = document.getElementById('themeToggleText');
 const htmlElement = document.documentElement;
@@ -918,5 +884,6 @@ document.getElementById('clearLog').addEventListener('click', () => {
   eventStatus.textContent = 'Event log cleared.';
 });
 </script>
+<script src="/NT-js/loadDynamicToolInfo.js" defer></script>
 </body>
 </html>
